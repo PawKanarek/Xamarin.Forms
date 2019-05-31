@@ -224,7 +224,7 @@ namespace Xamarin.Forms.Platform.MacOS
 #endif
 			Control = uiview;
 
-			if (Element.BackgroundColor != Color.Default)
+			if (Element != null && Element.BackgroundColor != Color.Default)
 				SetBackgroundColor(Element.BackgroundColor);
 
 			UpdateIsEnabled();
